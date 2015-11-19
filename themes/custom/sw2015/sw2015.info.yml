@@ -1,0 +1,21 @@
+name: SW2015
+description: Custom theme developed by Shawn Williams http://shawnbeta.com
+type: theme
+base theme: false
+core: 8.x
+engine: twig
+libraries:
+    - sw2015/globals
+stylesheets-remove:
+    - core/assets/vendor/normalize-css/normalize.css
+    - core/modules/system/css/system.module.css
+    - core/modules/system/css/system.theme.css
+    - core/modules/views/css/views.module.css
+regions:
+    navigation: Navigation
+    banner: Banner
+    breadcrumb: Breadcrumb
+    content_header: Content Header
+    content: Content
+    sidebar: Sidebar
+    footer: Footer

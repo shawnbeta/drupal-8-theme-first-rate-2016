@@ -1,0 +1,10 @@
+{{=<% %>=}}
+globals:
+  version: 1.x
+  css:
+    <%# css %>
+    <% label %>:
+    <%# items %>
+        globals/<% label %>/<%& src %>.css: {<%# extra %> <% extra.label %>: <% extra.value %> <%/ extra %>}
+    <%/ items %>
+    <%/ css %>

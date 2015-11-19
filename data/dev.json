@@ -1,0 +1,141 @@
+{
+  "libs":[
+    "globals"
+  ],
+  "css": [
+    {
+      "label": "vendor",
+      "items": [
+        {
+          "src": "bootstrap-components",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        },
+        {
+          "src": "font-awesome",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        }
+      ]
+    },
+    {
+      "label": "base",
+      "items": [
+        {
+          "src": "elements",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        },
+        {
+          "src": "globals",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        },
+        {
+          "src": "grid",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        }
+      ]
+    },
+    {
+      "label": "components",
+      "items": [
+        {
+          "src": "block",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        },
+        {
+          "src": "form/base",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        }
+      ]
+    },
+    {
+      "label": "layout",
+      "items": [
+        {
+          "src": "layout",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        }
+      ]
+    },
+    {
+      "label": "theme",
+      "items": [
+        {
+          "src": "print",
+          "extra": {
+            "label": "media",
+            "value": "print"
+          }
+        },
+        {
+          "src": "variables",
+          "extra": {
+            "label": "media",
+            "value": "all"
+          }
+        }
+      ]
+    }
+  ],
+  "js": [
+    "main"
+  ],
+  "remove": [
+    "assets/vendor/normalize-css/normalize.css",
+    "modules/system/css/system.module.css",
+    "modules/system/css/system.theme.css",
+    "modules/views/css/views.module.css"
+  ],
+  "regions": [
+    {
+      "id": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "id": "banner",
+      "label": "Banner"
+    },
+    {
+      "id": "breadcrumb",
+      "label": "Breadcrumb"
+    },
+    {
+      "id": "content_header",
+      "label": "Content Header"
+    },
+    {
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "id": "sidebar",
+      "label": "Sidebar"
+    },
+    {
+      "id": "footer",
+      "label": "Footer"
+    }
+  ]
+}

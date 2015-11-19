@@ -1,0 +1,19 @@
+{{=<% %>=}}
+name: SW2015
+description: Custom theme developed by Shawn Williams http://shawnbeta.com
+type: theme
+base theme: false
+core: 8.x
+engine: twig
+libraries:
+<%# libs %>
+    - sw2015/<% . %>
+<%/ libs %>
+stylesheets-remove:
+<%# remove %>
+    - core/<%& . %>
+<%/ remove %>
+regions:
+<%# regions %>
+    <% id %>: <% label %>
+<%/ regions %>

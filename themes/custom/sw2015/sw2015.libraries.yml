@@ -1,0 +1,18 @@
+globals:
+  version: 1.x
+  css:
+    vendor:
+        globals/vendor/bootstrap-components.css: { media: all }
+        globals/vendor/font-awesome.css: { media: all }
+    base:
+        globals/base/elements.css: { media: all }
+        globals/base/globals.css: { media: all }
+        globals/base/grid.css: { media: all }
+    components:
+        globals/components/block.css: { media: all }
+        globals/components/form/base.css: { media: all }
+    layout:
+        globals/layout/layout.css: { media: all }
+    theme:
+        globals/theme/print.css: { media: print }
+        globals/theme/variables.css: { media: all }

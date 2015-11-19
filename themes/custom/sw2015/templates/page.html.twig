@@ -1,0 +1,116 @@
+<div class="page-container">
+
+    {# Mobile Header #}
+    <header class="layout-mobile-page-header clearfix hideOverXS" role="banner"
+            aria-label="{{ 'Page header'|t}}">
+
+        {# Hamburger Icon used to show the mobile menu overlay or
+           open the page if no js #}
+        <a href="<?php print base_path();?>primary-menu" title="Primary Menu"
+           class="mobile-header__menu-toggler js-toggle-menu">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        {# Telephone Icon and link when clicked from phone launches dialer #}
+        <a href="tel:9198620226" title="Dial First Rate Lawn Service"
+           class="mobile-header__phone-action-button action-button">
+            <i class="fa fa-phone"></i>
+        </a>
+
+        {# Payment Icon and link #}
+        <a href="<?php print base_path(); ?>payments" title="Make a Payment"
+           class="mobile-header__payments-action-button action-button">
+            <i class="fa fa-credit-card"></i>
+        </a>
+
+        {# Estimate Request Icon and link to form #}
+        <a href="<?php print base_path(); ?>request-estimate" title="Request an Estimate"
+           class="mobile-header__estimate-action-button action-button">
+            <i class="fa fa-envelope-o"></i>
+        </a>
+
+    </header>
+
+    {# Page Header #}
+    <header class="layout-page-header clearfix" role="banner" aria-label="{{ 'Page header'|t}}">
+
+        {# Request an Estimate button for larger displays #}
+        <div class="page-header__estimate-container col-sm-4 hideXS">
+            <a href="<?php print base_path();?>request-estimate"
+               title="Request an Estimate" class="estimate-container__action-button
+               action-button">
+                <i class="fa fa-envelope-o"></i>
+                Request an Estimate
+            </a>
+        </div>
+
+        {# Logo remains no matter the viewport size #}
+        <div class="page-header__logo col-sm-4">
+            <span class="logo__row-one">first rate</span>
+            <span class="logo__row-two">lawn service</span>
+        </div>
+
+        {# Request an Estimate button for larger displays #}
+        <div class="page-header__payment-container col-sm-4 hideXS">
+
+            <div class="payment-container__phone-container">
+                {# Phone number#}
+                <i class="fa fa-phone"></i>
+                <span class="phoneText hideXS">(919) 862-0226</span>
+            </div>
+
+            <a href="<?php print base_path();?>payments"
+               title="Make a Payment" class="payment-container__action-button
+               action-button">
+                <i class="fa fa-credit-card"></i>
+                Make a Payment
+            </a>
+        </div>
+
+
+
+    </header>
+
+    {# Mobile Navigation #}
+    <nav class="layout-mobile-menu clearfix hideOverXS">
+        <ul class="layout-mobile-menu__primary-menu">
+            {{ page.navigation }}
+        </ul>
+    </nav>
+
+    {# Primary Navigation #}
+    <nav class="layout-navbar">
+        <ul class="layout-navbar__primary-menu">
+            {{ page.navigation }}
+        </ul>
+    </nav>
+
+    {% if page.banner %}
+    <div class="layout-banner">
+        {{ page.banner }}
+    </div>
+    {% endif %}
+
+    <div class="layout-main">
+
+        <div class="layout-content {% if page.sidebar %} col-md-8 {% endif %}">
+            <div class="breadcrumb">{{ page.breadcrumb }}</div>
+            <a id="main-content" tabindex="-1"></a>
+            {{ page.content_header }}
+            {{ page.content }}
+        </div>
+
+        {% if page.sidebar %}
+            <div class="layout-sidebar">
+                {{ page.sidebar }}
+            </div>
+        {% endif %}
+
+    </div>
+
+    <footer class="layout-footer">
+        {{ page.footer }}
+    </footer>
+
+
+</div>
